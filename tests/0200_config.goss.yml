@@ -1,0 +1,9 @@
+---
+
+file:
+  /etc/mongo-express/config.js:
+    exists: true
+    contains:
+      - "admin: true"
+      - "host:             process.env.VCAP_APP_HOST                 || '0.0.0.0'"
+      - "useBasicAuth: false"

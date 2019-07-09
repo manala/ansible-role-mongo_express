@@ -1,0 +1,18 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_mongo_express
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_mongo_express
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_mongo_express
+    - manala_mongo_express.services
+    - manala.services
